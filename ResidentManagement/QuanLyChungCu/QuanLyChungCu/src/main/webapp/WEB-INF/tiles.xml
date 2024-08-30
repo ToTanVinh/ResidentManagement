@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content" value="" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ quản trị" />
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    <definition name="room-list" extends="baseLayout">
+        <put-attribute name="title" value="Room" />
+        <put-attribute name="content" value="/WEB-INF/pages/rooms.jsp" />
+    </definition>
+    <definition name="user" extends="baseLayout">
+        <put-attribute name="title" value="User" />
+        <put-attribute name="content" value="/WEB-INF/pages/user.jsp" />
+    </definition>
+    <definition name="user_list" extends="baseLayout">
+        <put-attribute name="title" value="Users" />
+        <put-attribute name="content" value="/WEB-INF/pages/user_list.jsp" />
+    </definition>
+    <definition name="locker_list" extends="baseLayout">
+        <put-attribute name="title" value="Lockers" />
+        <put-attribute name="content" value="/WEB-INF/pages/locker_list.jsp" />
+    </definition>
+    <definition name="order" extends="baseLayout">
+        <put-attribute name="title" value="Order" />
+        <put-attribute name="content" value="/WEB-INF/pages/order.jsp" />
+    </definition>
+    <definition name="order_list" extends="baseLayout">
+        <put-attribute name="title" value="Orders" />
+        <put-attribute name="content" value="/WEB-INF/pages/order_list.jsp" />
+    </definition>
+    <definition name="invoice" extends="baseLayout">
+        <put-attribute name="title" value="Invoice" />
+        <put-attribute name="content" value="/WEB-INF/pages/invoice.jsp" />
+    </definition>
+    <definition name="invoice_list" extends="baseLayout">
+        <put-attribute name="title" value="Invoices" />
+        <put-attribute name="content" value="/WEB-INF/pages/invoice_list.jsp" />
+    </definition>
+    <definition name="survey" extends="baseLayout">
+        <put-attribute name="title" value="Survey" />
+        <put-attribute name="content" value="/WEB-INF/pages/survey.jsp" />
+    </definition>
+    <definition name="survey_list" extends="baseLayout">
+        <put-attribute name="title" value="Surveys" />
+        <put-attribute name="content" value="/WEB-INF/pages/survey_list.jsp" />
+    </definition>
+    
+    <definition name="stats" extends="baseLayout">
+        <put-attribute name="title" value="Statistic" />
+        <put-attribute name="content" value="/WEB-INF/pages/stats.jsp" />
+    </definition>
+    <definition name="parking_list" extends="baseLayout">
+        <put-attribute name="title" value="Parking Rights" />
+        <put-attribute name="content" value="/WEB-INF/pages/parking_list.jsp" />
+    </definition>
+    <definition name="entry_list" extends="baseLayout">
+        <put-attribute name="title" value="Entry Rights" />
+        <put-attribute name="content" value="/WEB-INF/pages/entry_list.jsp" />
+    </definition>
+    <definition name="feedback_list" extends="baseLayout">
+        <put-attribute name="title" value="Feedbacks" />
+        <put-attribute name="content" value="/WEB-INF/pages/feedback_list.jsp" />
+    </definition>
+    <definition name="feedback" extends="baseLayout">
+        <put-attribute name="title" value="Feedback" />
+        <put-attribute name="content" value="/WEB-INF/pages/feedback.jsp" />
+    </definition>
+</tiles-definitions>
